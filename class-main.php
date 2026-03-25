@@ -108,28 +108,34 @@ class WholeProdDynWooCommerceInit {
 	 *
 	 * @version 1.3.0
 	 */
-	public function pricePreText(){
+	public function pricePreText() {
 
-		if( isset($_REQUEST[$this->plugin.'userRoles'] ) ){
-			$userRoles =  sanitize_text_field(strtolower($_REQUEST[$this->plugin.'userRoles']));
-		}else $userRoles = get_option($this->plugin.'userRoles');
+		if ( isset( $_REQUEST[ $this->plugin . 'userRoles' ] ) ) {
+			$userRoles = strtolower( sanitize_text_field( wp_unslash( $_REQUEST[ $this->plugin . 'userRoles' ] ) ) );
+		} else {
+			$userRoles = get_option( $this->plugin . 'userRoles' );
+		}
 
-		$roles = explode(",", $userRoles );
+		$roles = explode( ',', $userRoles );
 
-		foreach( $roles as $role ){
+		foreach ( $roles as $role ) {
 
-			if( isset($_REQUEST[ $role .'pricePreText'] ) ){
-				$pricePreText =  sanitize_text_field($_REQUEST[$role .'pricePreText']);
-			}else $pricePreText = get_option($role .'pricePreText');
+			if ( isset( $_REQUEST[ $role . 'pricePreText' ] ) ) {
+				$pricePreText = sanitize_text_field( wp_unslash( $_REQUEST[ $role . 'pricePreText' ] ) );
+			} else {
+				$pricePreText = get_option( $role . 'pricePreText' );
+			}
 
 			?>
-				<input name="<?php echo esc_attr( $role . $this->pricePreText ); ?>" id="<?php echo esc_attr( $role . $this->pricePreText ); ?>"    placeholder='<?php echo esc_attr( $role ); ?> <?php esc_html_e('Prices prefix Text','wholesale-products-dynamic-pricing-management-woocommerce' ); ?>' value='<?php if(!empty($pricePreText) ) print esc_attr( $pricePreText ); ?>' />
+			<input
+				name="<?php echo esc_attr( $role . $this->pricePreText ); ?>"
+				id="<?php echo esc_attr( $role . $this->pricePreText ); ?>"
+				placeholder="<?php echo esc_attr( $role ); ?> <?php esc_attr_e( 'Prices prefix Text', 'wholesale-products-dynamic-pricing-management-woocommerce' ); ?>"
+				value="<?php echo esc_attr( ! empty( $pricePreText ) ? $pricePreText : '' ); ?>"
+			/>
 			<?php
 
 		}
-
-
-
 	}
 
 	public function showSpecificProductsToRole(){
