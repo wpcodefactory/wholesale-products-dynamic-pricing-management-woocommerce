@@ -10,12 +10,12 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 WholeSale Products Dynamic Pricing Management for Multiple User Roles plugin to manage  WooCommerce B2B Store
- 
+
 == Description ==
 
 = WholeSale Products Dynamic Pricing Management for Multiple User Roles plugin to manage  WooCommerce B2B Store =
 
-Do you have different wholesale customers and you need to apply dynamically different pricing for wholesale products? 
+Do you have different wholesale customers and you need to apply dynamically different pricing for wholesale products?
 
 This WordPress plugin is a wholesale management system that makes your Eshop turn into a WooCommerce B2B store.
 You will be able to define **multiple Wholesale User Roles** and apply **dynamic wholesale prices** per Role for your Wholesale Products.
@@ -85,7 +85,7 @@ In this case the plugin will detect automatically the previous roles and delete 
 
 
 = What about minimum quantities for wholesale products or step quantities? =
-This is available in the [PRO Version](https://extend-wp.com/product/wholesale-products-dynamic-pricing-management-woocommerce "WholeSale Products Dynamic Pricing Management WooCommerce PRO") 
+This is available in the [PRO Version](https://extend-wp.com/product/wholesale-products-dynamic-pricing-management-woocommerce "WholeSale Products Dynamic Pricing Management WooCommerce PRO")
 
 = What about wholesale pricing for Product Variations? =
 This is available in the [PRO Version](https://extend-wp.com/product/wholesale-products-dynamic-pricing-management-woocommerce "WholeSale Products Dynamic Pricing Management WooCommerce PRO")

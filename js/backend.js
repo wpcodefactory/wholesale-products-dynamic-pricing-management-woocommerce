@@ -1,16 +1,16 @@
 (function( $ ) {
 	"use strict";
 
-	
+
 	$(".proVersion").click(function(e){
 		e.preventDefault();
-		
+
 		$("#WholeProdDynWooCommerceModal").slideDown();
 	});
 		$("#WholeProdDynWooCommerceModal .close").click(function(e){
 			e.preventDefault();
 			$("#WholeProdDynWooCommerceModal").fadeOut();
-		});		
+		});
 
 		var modal = document.getElementById('WholeProdDynWooCommerceModal');
 
@@ -28,11 +28,11 @@
 			//do nothing
 		}else{
 			var url = $(this).attr("href");
-			$('.WholeProdDynWooCommerce').addClass('loading');			
+			$('.WholeProdDynWooCommerce').addClass('loading');
 			$("body").load($(this).attr("href"),function(){
 				window.history.replaceState("object or string", "Title", url );
-			});				
+			});
 		}
 	});
-	
-})( jQuery )	
+
+})( jQuery )
