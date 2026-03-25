@@ -1,0 +1,285 @@
+
+/* ANIMATION RIGHT TO LEFT*/
+@-webkit-keyframes rightToLeft{ 
+	0% {
+	    opacity: 0;
+	    -webkit-transform: translateX(300px);
+	    -moz-transform: translateX(300px);
+	    transform: translateX(300px) ;
+	    
+	}
+	30% {
+	    opacity: 1;
+	    -webkit-transform: translateX(0px) ;
+	    -moz-transform: translateX(0px) ;
+	    transform: translateX(0px) ;
+
+	}
+	100% {
+	    opacity: 1;
+	    -webkit-transform: scale(1) ;
+	    -moz-transform:  scale(1) ;
+	    transform:  scale(1) ;
+	    
+	}
+}
+
+
+
+
+.rightToLeft{
+    -webkit-animation: rightToLeft 2s ease-in-out;
+    -moz-animation: rightToLeft 2s ease-in-out;
+    -o-animation: rightToLeft 2s ease-in-out;
+    -ms-animation: rightToLeft 2s ease-in-out;
+    animation: rightToLeft 2s ease-in-out;	
+	
+}
+
+.web_logo{
+		float:right;
+}
+.web_logo img{
+    width: 150px;
+    height: 100px;
+}
+
+.WholeProdDynWooCommerceRating .fa-star{
+	color:gold;
+}
+
+.WholeProdDynWooCommerce .webd_extra {
+		overflow:hidden;
+}
+.WholeProdDynWooCommerce .webd_extra li{
+		display:inline;
+		width:30%;
+		padding:1%;
+		margin:1%;
+		border-bottom:1px solid #fefefe;
+}
+
+.WholeProdDynWooCommerce .webd_plugins{
+		overflow:hidden;
+		position:relative;
+		width:100%;
+}
+
+.WholeProdDynWooCommerce .webd_plugins li{
+		text-align:center;
+}
+.WholeProdDynWooCommerce .webd_plugins li .premium_msg{
+		width:50%;
+}
+.WholeProdDynWooCommerce .webd_plugins div{
+	text-align:left;
+	float:left;
+	width:75%;
+}
+
+.WholeProdDynWooCommerce .webd_plugins .img-container{
+		float:left;
+		width:25%
+}
+
+/* =============== RESPONSES  ================== */
+
+.WholeProdDynWooCommerce .gopro{
+		background:#A36296 !important;
+		color:#fff;
+		transition:all .3s ease-in;
+}
+.WholeProdDynWooCommerce .gopro:hover{
+		opacity:0.7;
+}
+
+.WholeProdDynWooCommerce .premium_button{
+		background:#0085ba;
+		color:#fff;
+		padding:5px;
+		margin:5px;
+		margin-right:0;
+		text-decoration:none;
+		border-radius:5px;
+		font-size:1.2em;
+}
+
+.WholeProdDynWooCommerce .premium_img{
+	max-width:50%;
+	max-height:50%;	
+}
+
+.WholeProdDynWooCommerce .premium_msg{
+		display:none;
+		background:#F08080;
+		border:1px solid red;
+		text-align:center;
+		padding:10px;
+		margin:10px;
+}
+
+
+
+.WholeProdDynWooCommerce .msg,.WholeProdDynWooCommerce .response{
+		background:#ccc;
+		padding:10px;
+		border:1px solid #777;
+		display:none;
+}
+.WholeProdDynWooCommerce .success{
+		background:lightGreen;
+		padding:5px;
+		border:1px solid green;
+		color:#fff;
+}
+.WholeProdDynWooCommerce .error{
+		background:#FFCCCB;
+		padding:5px;
+		border:1px solid red;
+}
+.WholeProdDynWooCommerce .warning{
+		background:#d9534f;
+		padding:5px;
+		color:#fff;
+}
+
+.WholeProdDynWooCommercecolumn1,
+.WholeProdDynWooCommercecolumns2,
+.WholeProdDynWooCommercecolumns3,
+.WholeProdDynWooCommercecolumns4,
+.WholeProdDynWooCommercecolumns5,
+.WholeProdDynWooCommercecolumns6{
+	/*box-sizing:border-box;*/
+	float:left;
+	box-sizing:border-box;
+	padding:5px;
+	margin:0 0.5%;
+}
+
+.WholeProdDynWooCommercecolumn1{
+	width:100%;
+	float:none;
+}
+.WholeProdDynWooCommercecolumns2{
+	width:49% ;
+	
+}
+.WholeProdDynWooCommercecolumns3{
+	width:32.3% ;
+}
+.WholeProdDynWooCommercecolumns4{
+	width:24%;
+}
+.WholeProdDynWooCommercecolumns5{
+	width:19%;
+}
+.WholeProdDynWooCommercecolumns6{
+	width:15.6%;
+}
+
+.WholeProdDynWooCommerceclearfix{
+	overflow:hidden;
+	clear:both;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.WholeProdDynWooCommerce .morePlugins{
+	display:flex;
+	background:#fff;
+	padding:10px;
+	box-sizing:border-box;
+	box-shadow:0 2px 3px #ccc;
+}
+.WholeProdDynWooCommerce .morePlugins img{
+	max-width:100%;
+}
+
+.proSpan{
+	color:#42b72a;
+	font-style:italic;
+	font-weight:bold;
+	cursor:pointer;
+}
+.proVersion:hover{
+	cursor:pointer;
+}
+
+.proUrl{
+	color:#fff;
+	background:#42b72a;
+	padding:10px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.proUrl:hover{
+	color:#fff;
+	box-shadow:0 2px 2px #777;
+}
+
+input.proVersion{
+	border:2px solid #fff;
+	background:#fefefe !important;
+	color:#fff !important
+}
+h2 a.proVersion{
+	background:#42b72a !important;
+	color:#fff !important
+}
+h2 a.disabled{
+	background:#fefefe !important;
+	color:#dddddd !important
+}
+span.proVersion{
+	color:#c9c9c9 !important
+}
+
+/*  PRO VERSION MODAL */
+#WholeProdDynWooCommerceModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#WholeProdDynWooCommerceModal .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#WholeProdDynWooCommerceModal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#WholeProdDynWooCommerceModal .close:hover,
+#WholeProdDynWooCommerceModal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media(max-width:767px){
+	.WholeProdDynWooCommerce .webd_plugins div,.WholeProdDynWooCommerce .webd_plugins .img-container{
+		float:none;
+		width:100%;
+	}
+	.WholeProdDynWooCommercecolumns2,.WholeProdDynWooCommercecolumns3,.WholeProdDynWooCommercecolumns4,.WholeProdDynWooCommercecolumns5,.WholeProdDynWooCommercecolumns6{
+		float:none !important;
+		width:99% !important;
+	}
+
+}
