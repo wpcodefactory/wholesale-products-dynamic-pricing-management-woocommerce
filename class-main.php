@@ -1,8 +1,13 @@
 <?php
+/**
+ * WholeSale Products Dynamic Pricing Management WooCommerce - WholeProdDynWooCommerceInit Class
+ *
+ * @author extendWP
+ */
 
- if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+defined( 'ABSPATH' ) || exit;
 
- class WholeProdDynWooCommerceInit{
+class WholeProdDynWooCommerceInit {
 
 	public $tab;
 	public $activeTab;
@@ -526,4 +531,4 @@
 	}
 
 
- }
+}

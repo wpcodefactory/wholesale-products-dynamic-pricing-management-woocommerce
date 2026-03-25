@@ -4,8 +4,8 @@ Donate link: https://extend-wp.com/wholesale-products-dynamic-pricing-management
 Tags: wholesale, b2b, woocommerce wholesale, dynamic pricing, wholesale prices, woocommerce
 Requires at least: 3.0.1
 Requires PHP: 5.2.4
-Tested up to: 6.7.1
-Stable tag: trunk
+Tested up to: 6.9
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,7 +45,6 @@ You will be able to apply wholesale product pricing with ease for your simple pr
 * Translation Ready
 * Currency Compatible
 
-
 **[GET PRO VERSION HERE](https://extend-wp.com/product/wholesale-products-dynamic-pricing-management-woocommerce "WholeSale Products Dynamic Pricing Management WooCommerce PRO")**
 
 = PRO Plugin Features =
@@ -63,7 +62,6 @@ You will be able to apply wholesale product pricing with ease for your simple pr
 
 **[GET PRO VERSION HERE](https://extend-wp.com/product/wholesale-products-dynamic-pricing-management-woocommerce "WholeSale Products Dynamic Pricing Management WooCommerce PRO")**
 
-
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins` directory and unzip, or install the plugin through the WordPress plugins screen directly.
@@ -71,18 +69,16 @@ You will be able to apply wholesale product pricing with ease for your simple pr
 3. Go to WooCommerce / Wholesale Management tab to view plugin settings, create wholesale roles.
 4. Go to each of your products edit page and assign prices per role.
 
-
 == Frequently Asked Questions ==
 
 = Do I need to add a wholesale role? =
 The plugin on activation by default creates a role, so you can directly start applying your prices.
 
 = What if I have different User roles? =
-You can create multiple comma separated roles in plugin's settins so you will get a price field for each of these roles!
+You can create multiple comma separated roles in plugin's settings so you will get a price field for each of these roles!
 
 = What if I want to change the namings or add more User roles? =
 In this case the plugin will detect automatically the previous roles and delete them, create the new or add just the new ones
-
 
 = What about minimum quantities for wholesale products or step quantities? =
 This is available in the [PRO Version](https://extend-wp.com/product/wholesale-products-dynamic-pricing-management-woocommerce "WholeSale Products Dynamic Pricing Management WooCommerce PRO")
@@ -93,26 +89,31 @@ This is available in the [PRO Version](https://extend-wp.com/product/wholesale-p
 == Screenshots ==
 
 1. Wholesale Products Dynamic Pricing for WooCommerce Backend Settings Page
-2. Product List Table wholesal price info columns
+2. Product List Table wholesale price info columns
 3. Product Edit Screen wholesale prices fields
 4. Shop Page Price Suffix for Wholesale
 
 == Changelog ==
 
+= 1.3.0 - 25/03/2026 =
+* Tested up to: 6.9.
+* WC tested up to: 10.6.
+
 = 1.2 =
-woo hpos compatibility
+* WooCommerce HPOS compatibility.
 
 = 1.1 =
-fixed price inputs to take decimal values
+* Fixed price inputs to take decimal values.
 
 = 1.0 =
+* Initial release.
 
 == Upgrade Notice ==
 
 = 1.0 =
 
 = 1.1 =
-fixed price inputs to take decimal values
+Fixed price inputs to take decimal values.
 
 = 1.2 =
-woo hpos compatibility
+WooCommerce HPOS compatibility.
