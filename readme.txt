@@ -96,6 +96,7 @@ This is available in the [PRO Version](https://extend-wp.com/product/wholesale-p
 == Changelog ==
 
 = 1.3.0 - 25/03/2026 =
+* Fix - Security - Escape output.
 * Tested up to: 6.9.
 * WC tested up to: 10.6.
 

@@ -2,6 +2,8 @@
 /**
  * WholeSale Products Dynamic Pricing Management WooCommerce - WholeProdDynWooCommerceInit Class
  *
+ * @version 1.3.0
+ *
  * @author extendWP
  */
 
@@ -101,6 +103,11 @@ class WholeProdDynWooCommerceInit {
 
 	}
 
+	/**
+	 * pricePreText.
+	 *
+	 * @version 1.3.0
+	 */
 	public function pricePreText(){
 
 		if( isset($_REQUEST[$this->plugin.'userRoles'] ) ){
@@ -116,7 +123,7 @@ class WholeProdDynWooCommerceInit {
 			}else $pricePreText = get_option($role .'pricePreText');
 
 			?>
-				<input name="<?php print $role.$this->pricePreText;?>" id="<?php print $role.$this->pricePreText;?>"    placeholder='<?php print $role;?> <?php esc_html_e('Prices prefix Text','wholesale-products-dynamic-pricing-management-woocommerce' ); ?>' value='<?php if(!empty($pricePreText) ) print esc_attr( $pricePreText ); ?>' />
+				<input name="<?php echo esc_attr( $role . $this->pricePreText ); ?>" id="<?php echo esc_attr( $role . $this->pricePreText ); ?>"    placeholder='<?php echo esc_attr( $role ); ?> <?php esc_html_e('Prices prefix Text','wholesale-products-dynamic-pricing-management-woocommerce' ); ?>' value='<?php if(!empty($pricePreText) ) print esc_attr( $pricePreText ); ?>' />
 			<?php
 
 		}
