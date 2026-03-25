@@ -90,17 +90,26 @@ class WholeProdDynWooCommerceInit {
 		<?php
 	}
 
-	public function userRoles(){
-
-		if( isset($_REQUEST[ $this->plugin.'userRoles'] ) ){
-			$userRoles =  sanitize_text_field( $_REQUEST[ $this->plugin.'userRoles'] );
-		}else $userRoles = get_option( esc_html( $this->plugin ).'userRoles' ) ;
+	/**
+	 * userRoles.
+	 *
+	 * @version 1.3.0
+	 */
+	public function userRoles() {
+		if ( isset( $_REQUEST[ $this->plugin . 'userRoles' ] ) ) {
+			$userRoles = sanitize_text_field( wp_unslash( $_REQUEST[ $this->plugin . 'userRoles' ] ) );
+		} else {
+			$userRoles = get_option( esc_html( $this->plugin ) . 'userRoles' );
+		}
 
 		?>
-			<input name="<?php print esc_attr( $this->plugin ).esc_attr( $this->userRoles ) ; ?>" id="<?php print esc_attr( $this->plugin ).esc_attr( $this->userRoles );?>"   placeholder='Roles comma separated' value='<?php if(!empty($userRoles) ) print esc_attr( $userRoles ); ?>' />
+		<input
+			name="<?php echo esc_attr( $this->plugin . $this->userRoles ); ?>"
+			id="<?php echo esc_attr( $this->plugin . $this->userRoles ); ?>"
+			placeholder="<?php esc_attr_e( 'Roles comma separated', 'wholesale-products-dynamic-pricing-management-woocommerce' ); ?>"
+			value="<?php echo esc_attr( ! empty( $userRoles ) ? $userRoles : '' ); ?>"
+		/>
 		<?php
-
-
 	}
 
 	/**
@@ -109,7 +118,6 @@ class WholeProdDynWooCommerceInit {
 	 * @version 1.3.0
 	 */
 	public function pricePreText() {
-
 		if ( isset( $_REQUEST[ $this->plugin . 'userRoles' ] ) ) {
 			$userRoles = strtolower( sanitize_text_field( wp_unslash( $_REQUEST[ $this->plugin . 'userRoles' ] ) ) );
 		} else {
@@ -119,7 +127,6 @@ class WholeProdDynWooCommerceInit {
 		$roles = explode( ',', $userRoles );
 
 		foreach ( $roles as $role ) {
-
 			if ( isset( $_REQUEST[ $role . 'pricePreText' ] ) ) {
 				$pricePreText = sanitize_text_field( wp_unslash( $_REQUEST[ $role . 'pricePreText' ] ) );
 			} else {
@@ -134,7 +141,6 @@ class WholeProdDynWooCommerceInit {
 				value="<?php echo esc_attr( ! empty( $pricePreText ) ? $pricePreText : '' ); ?>"
 			/>
 			<?php
-
 		}
 	}
 
