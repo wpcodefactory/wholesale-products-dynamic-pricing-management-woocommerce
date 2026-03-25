@@ -3,7 +3,7 @@
  * Plugin Name: WholeSale Products Dynamic Pricing Management WooCommerce
  * Plugin URI: https://extend-wp.com/wholesale-products-dynamic-pricing-management-woocommerce
  * Description: WholeSale Products Dynamic Pricing Management for Multiple User Roles plugin to manage  WooCommerce B2B Store
- * Version: 1.3.0-dev
+ * Version: 1.3.0
  * Author: extendWP
  * Author URI: https://extend-wp.com
  * WC tested up to: 10.6
